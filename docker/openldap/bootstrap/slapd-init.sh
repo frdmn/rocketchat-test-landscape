@@ -4,10 +4,10 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=planetexpress.com
-readonly LDAP_ORGANISATION="Planet Express, Inc."
-readonly LDAP_BINDDN="cn=admin,dc=planetexpress,dc=com"
-readonly LDAP_SECRET=GoodNewsEveryone
+readonly LDAP_DOMAIN=rocket.chat
+readonly LDAP_ORGANISATION="Rocket.Chat LLC"
+readonly LDAP_BINDDN="cn=admin,dc=rocket,dc=chat"
+readonly LDAP_SECRET=RocketChatLDAPadmin
 
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
 readonly LDAP_SSL_CERT="/etc/ldap/ssl/ldap.crt"
