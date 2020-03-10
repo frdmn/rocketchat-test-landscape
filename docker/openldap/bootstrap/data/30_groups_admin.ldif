@@ -3,3 +3,4 @@ objectclass: Group
 objectclass: top
 groupType: 2147483650
 cn: admin_staff
+member: cn=Gabriel Engel,ou=Management,dc=rocket,dc=chat

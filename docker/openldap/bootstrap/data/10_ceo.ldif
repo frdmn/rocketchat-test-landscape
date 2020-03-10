@@ -1,0 +1,28 @@
+version: 1
+
+dn: cn=Gabriel Engel,ou=Management,dc=rocket, dc=chat
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Gabriel Engel
+sn: Engel
+description: Our Rocket.Chat CEO
+facsimileTelephoneNumber: +1 123 456-7890
+l: Porto Alegre
+ou: Management
+postalAddress: Management$Porto Alegre
+telephoneNumber: +55 987 654-3210
+title: Chief Executive Officer
+userPassword: Password1
+uid: EngelG
+givenName: Gabriel
+mail: gabriel.engel@rocket.chat
+carLicense: ABC123
+departmentNumber: 0
+employeeType: Employee
+homePhone: +55 123 456-9999
+initials: S. T.
+mobile: +1 123 456-9999
+pager: +55 408 317-1280
+roomNumber: 4728
