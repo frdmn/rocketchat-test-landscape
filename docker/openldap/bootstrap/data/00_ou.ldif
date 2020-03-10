@@ -1,0 +1,51 @@
+version: 1
+
+dn: ou=Accounting,dc=rocket, dc=chat
+ou: Accounting
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Product Development,dc=rocket, dc=chat
+ou: Product Development
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Product Testing,dc=rocket, dc=chat
+ou: Product Testing
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Human Resources,dc=rocket, dc=chat
+ou: Human Resources
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Payroll,dc=rocket, dc=chat
+ou: Payroll
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Janitorial,dc=rocket, dc=chat
+ou: Janitorial
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Management,dc=rocket, dc=chat
+ou: Management
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Administrative,dc=rocket, dc=chat
+ou: Administrative
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Peons,dc=rocket, dc=chat
+ou: Peons
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Planning,dc=rocket, dc=chat
+ou: Planning
+objectClass: top
+objectClass: organizationalUnit
