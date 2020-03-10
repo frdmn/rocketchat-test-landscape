@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  openldap:
+    build: ./docker/openldap
+    ports:
+      - '389:389'
+      - '636:636'
+    volumes:
+      - openldap_data:/var/lib/ldap/
+
+volumes:
+  openldap_data:
