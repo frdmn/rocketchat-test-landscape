@@ -1,0 +1,4 @@
+dn: cn=module{10},cn=config
+objectClass: olcModuleList
+cn: module{10}
+olcModuleLoad: ppolicy.la

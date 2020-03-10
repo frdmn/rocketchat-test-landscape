@@ -71,6 +71,22 @@ configure_memberof_overlay(){
   ldapmodify -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/memberof.ldif -Q
 }
 
+load_ppolicy_schema(){
+  echo "Load ppolicy schema..."
+  ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/ldap/schema/ppolicy.ldif -Q
+}
+
+load_ppolicy_module(){
+  echo "Load ppolicy module..."
+  ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/ppolicy_module.ldif -Q
+}
+
+load_ppolicy_overlay(){
+  echo "Load ppolicy overlay..."
+  ldapadd -Y EXTERNAL -H ldapi:/// -f ${CONFIG_DIR}/ppolicy_overlay.ldif -Q
+}
+
+
 load_initial_data() {
     echo "Load data..."
     local data=$(find ${DATA_DIR} -maxdepth 1 -name \*_\*.ldif -type f | sort)
@@ -95,6 +111,9 @@ configure_msad_features
 configure_tls
 configure_logging
 configure_memberof_overlay
+load_ppolicy_schema
+load_ppolicy_module
+load_ppolicy_overlay
 load_initial_data
 
 kill -INT `cat /run/slapd/slapd.pid`
