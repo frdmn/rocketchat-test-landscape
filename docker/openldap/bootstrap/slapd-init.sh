@@ -12,7 +12,6 @@ readonly LDAP_SECRET=RocketChatLDAPadmin
 readonly LDAP_SSL_KEY="/etc/ldap/ssl/ldap.key"
 readonly LDAP_SSL_CERT="/etc/ldap/ssl/ldap.crt"
 
-
 reconfigure_slapd() {
     echo "Reconfigure slapd..."
     cat <<EOL | debconf-set-selections
