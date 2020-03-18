@@ -30,6 +30,8 @@ This project includes pre-configured services (currently just LDAP) that are use
 
 ##### Configuration within Rocket.Chat
 
+Make sure to _adjust_ the following settings in the LDAP section of Rocket.Chat:
+
 * Enable: `true`
 * Host: Your LAN IP, e.g. `192.168.1.48` (Do not use `localhost` if RC is dockerized!)
 * Port:
@@ -46,7 +48,6 @@ This project includes pre-configured services (currently just LDAP) that are use
 * Sync -> Username Field: `uid`
 * Sync -> Default Domain: `rocket.chat`
 * Sync -> Merge Existing Users: `true`
-* User Search -> Filter: `(objectclass=*)`
 * User Search -> Search Field: `uid,mail`
 
 _Note_: Since the LDAP tree contains 1000 users, it takes about 3 minutes until the synchronization is finished!
